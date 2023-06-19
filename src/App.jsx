@@ -7,6 +7,7 @@ import {
   Experience,
   CardDeal,
   Feedback,
+  TopBack,
 } from "./components";
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         </div>
       </div>
       <Footer />
+      <TopBack />
     </div>
   );
 };

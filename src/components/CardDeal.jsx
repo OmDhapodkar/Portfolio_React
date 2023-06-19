@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "../style";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { github, web } from "../assets";
+import { github, web, project1 } from "../assets";
 
 const ProjectCard = ({
   index,
@@ -16,10 +16,10 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        option={{ max: 30, scale: 0.8, speed: 250 }}
+        option={{ max: 10, scale: 0.15, speed: 450 }}
         className=" bg-[#1d1836] p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px] p-3">
+        <div className="relative w-full h-[250px] p-1">
           <img
             src={image}
             alt={name}
@@ -27,12 +27,12 @@ const ProjectCard = ({
           />
           <div
             onClick={() => window.open(source_code_link, "_blank")}
-            className="border-2 border-white absolute inset-0 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            className="border-2 border-white absolute inset-0 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
           >
-            <img src={github} alt="github" className="w-5 h-5 object-contain" />
+            <img src={github} alt="github" className="w-4 h-4 object-contain" />
           </div>
         </div>
-        <div className={`mt-5 ${styles.paragraph}`}>
+        <div className={`mt-3 ${styles.paragraph}`}>
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-slate-300 text-[14px]">{description}</p>
         </div>
@@ -51,25 +51,25 @@ const ProjectCard = ({
 const CardDeal = () => {
   const projects = [
     {
-      name: "Coming Up",
+      name: "PortFolio Website",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat semper ligula, eu gravida urna consectetur ut. ",
+        "My website showcases my work and skills using React, Tailwind CSS, and Framer Motion. It offers a sleek and modern design with responsive layouts that adapt to various devices. Leveraging the power of Framer Motion, I've incorporated engaging animations and transitions to create an immersive user experience.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "text-gradient",
         },
         {
-          name: "mongodb",
+          name: "TailWindCSS",
           color: "text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Framer-Motion",
           color: "text-gradient",
         },
       ],
-      image: web,
-      source_code_link: "https://github.com/",
+      image: project1,
+      source_code_link: "https://github.com/OmDhapodkar/Portfolio_React",
     },
     {
       name: "Coming Up",

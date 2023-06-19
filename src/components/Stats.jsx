@@ -13,7 +13,7 @@ import {
 } from "../assets";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, slideIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const Stats = () => {
   const techs = [
