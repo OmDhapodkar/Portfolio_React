@@ -6,5 +6,16 @@ import Hero from "./Hero";
 import Experience from "./Experience";
 import Feedback from "./Feedback";
 import TopBack from "./TopBack";
+import SideNav from "./SideNav";
 
-export { Navbar, CardDeal, Stats, Footer, Hero, Experience, Feedback, TopBack };
+export {
+  Navbar,
+  CardDeal,
+  Stats,
+  Footer,
+  Hero,
+  Experience,
+  Feedback,
+  TopBack,
+  SideNav,
+};

@@ -8,6 +8,7 @@ import {
   CardDeal,
   Feedback,
   TopBack,
+  SideNav,
 } from "./components";
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
       </div>
       <Footer />
       <TopBack />
+      <SideNav />
     </div>
   );
 };
